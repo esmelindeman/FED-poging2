@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'AmericanTypewriterITCPro-Lt';
+    src: url('AmericanTypewriterITCPro-Lt.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chocoladeletter';
+    src: url('Chocoladeletter.woff2') format('woff2'),
+        url('Chocoladeletter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriterITCPro';
+    src: url('AmericanTypewriterITCPro-Bold.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriterITCPro-Med';
+    src: url('AmericanTypewriterITCPro-Med.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Med.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

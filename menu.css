@@ -1,0 +1,150 @@
+/******************
+VARIABELEN
+******************/
+
+:root {
+    --primarycolor: red;
+    --secondarycolor: #06c;
+    --thirdcolor: #f1f1ec;
+    --fourthcolor: white;
+    --font-family: 'AmericanTypewriter';
+    --padding:  3em .5em 3.5em;
+    --titelgrootte: 3em;
+    --tekstgrootte: 1.3em
+}
+
+/******************
+ALGMENE STIJLING
+******************/
+
+body {
+    padding: 0;
+    margin:0 ;
+}
+
+.menu {
+    padding:0;
+    margin:0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+li {
+    padding-bottom: .5em;
+}
+
+h2 {
+    padding-left: .8em;
+    font-size: var(--titelgrootte);
+    margin-bottom: -.03em;
+}
+
+/******************
+KLEUREN MENU
+******************/
+.list {
+    position: relative;
+    padding: var(--padding);
+}
+
+.list::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3em;
+    left: 0;
+    bottom: -3em;
+    background: linear-gradient(184deg, var(--background-skew)  0%, var(--background-skew)  50%, rgba(255,0,0,0) 50%);
+    z-index: 2;
+}
+
+.list1 {
+    background-color:var(--primarycolor);
+    color: var(--fourthcolor);
+    --background-skew: var(--primarycolor);
+}
+
+.list2 {
+    background-color: var(--secondarycolor);
+    color: var(--fourthcolor);
+    --background-skew: var(--secondarycolor);
+}
+
+.list3 {
+    background-color: var(--fourthcolor);
+    color: black;
+    --background-skew: var(--fourthcolor);
+}
+
+.list4 {
+    background-color:var(--thirdcolor);
+    color: black;
+}
+
+.list1 li a, .list2 li a{
+    color: var(--fourthcolor)
+}
+
+.list3 li a, .list4 li a {
+    color: black;
+}
+
+
+
+/******************
+FONT FAMILY
+******************/
+
+body {
+    font-family: var(--font-family);
+    padding: auto;
+    margin: auto;
+}
+
+/******************
+OPMAAK LIST ITEMS
+******************/
+
+.menu {
+    padding:0;
+    margin:0 ;
+    display: none;
+}
+
+.menu li {
+    list-style:circle;
+}
+
+.menu li ul li:nth-of-type(1) {
+    list-style: none;
+    padding-bottom: 2em;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: var(--tekstgrootte);
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+
+/******************
+HAMBURGER
+******************/
+svg {
+    position: fixed;
+    background-color: var(--primarycolor);
+    fill: var(--fourthcolor);
+    z-index: 1;
+    top: 32px;
+    left: 48px;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+

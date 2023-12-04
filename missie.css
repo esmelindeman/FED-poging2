@@ -1,0 +1,38 @@
+/******************
+VARIABELEN
+******************/
+
+:root {
+    --primarycolor: red;
+    --secondarycolor: #06c;
+    --thirdcolor: #f1f1ec;
+    --fourthcolor: white;
+    --font-family: 'AmericanTypewriter';
+}
+
+/******************
+BASIS
+******************/
+body {
+    background-color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+
+/******************
+CARROUSEL
+******************/
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5em
+
+
+}
+
+.image-carousel img {
+    width: 60vh;
+}
